@@ -2,6 +2,8 @@
 
 import sys
 import youtube_dl
+import mutagen
+from mutagen.id3 import ID3, TPE1, ID3NoHeaderError
 from mutagen.easyid3 import EasyID3
 
 url=sys.argv[1]
@@ -25,7 +27,14 @@ options = {
 
 with youtube_dl.YoutubeDL(options) as ydl:
     result = ydl.extract_info("{}".format(url))
-    filename = ydl.prepare_filename(result)[:-5] + '.mp3'
+    filename = ydl.prepare_filename(result)
+    if "youtube" in url:
+        filename = ydl.prepare_filename(result)[:-5] + '.mp3'
+    if "soundcloud" in url:
+        filename = ydl.prepare_filename(result)
+        metatag = mutagen.File(filename)
+        metatag.add_tags()
+        metatag.save(filename, v1=2)
     metatag = EasyID3(filename)
     metatag['title'] = "{}".format(title)
     metatag['artist'] = "{}".format(artist)
