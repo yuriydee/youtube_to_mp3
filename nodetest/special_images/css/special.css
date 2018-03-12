@@ -1,0 +1,190 @@
+.slideClass {
+   position:absolute;
+   left:0px;
+   top:0px;
+   width:971px;
+   height:564px;
+   z-index:100;
+   overflow:hidden;
+}
+.readingClubTextClass {
+	position:absolute;
+	left:741px;
+	top:34px;
+	z-index:1000;
+}
+.teachersButtonClass {
+	position:absolute;
+	left:715px;
+	top:82px;
+	z-index:1000;
+	cursor:pointer;
+}
+.parentsButtonClass {
+	position:absolute;
+	left:715px;
+	top:282px;
+	z-index:1000;
+	cursor:pointer;
+}
+.kidClass {
+	position:absolute;
+	left:0px;
+	top:1px;
+	z-index:21;
+}
+#formHolder {
+	position:absolute;
+	left:0px;
+	top:487px;
+	width:971px;
+	height:78px;
+	z-index:2000;
+}
+
+#formHolderContent {
+	height:78px;
+  display:none
+}
+
+#bottomText {
+	position:absolute;
+	left:0px;
+	top:25px;
+	z-index:10;
+}
+.emailFieldClass {
+	position:absolute;
+	left:251px;
+	top:25px;
+	z-index:200;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#888888;
+	width:210px;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-indent:6px;
+}
+.passwordFieldClass {
+	position:absolute;
+	left:476px;
+	top:25px;
+	z-index:200;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#888888;
+	width:152px;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-indent:6px;
+}
+.passwordFieldClassHidden {
+    display: none; 
+	position:absolute;
+	left:476px;
+	top:25px;
+	z-index:200;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	color:#888888;
+	width:152px;
+	padding-top:3px;
+	padding-bottom:3px;
+	text-indent:6px;
+}
+#submitButton {
+	position:absolute;
+	left:638px;
+	top:22px;
+	z-index:300;
+	cursor:pointer;
+}
+#forgotButton {
+	position:absolute;
+	left:481px;
+	top:54px;
+	z-index:300;
+	cursor:pointer;
+}
+#registerButton {
+	position:absolute;
+	left:797px;
+	top:25px;
+	z-index:300;
+	cursor:pointer;
+}
+#bigButton {
+	position:absolute;
+	left:136px;
+	top:412px;
+	width:430px;
+	height:75px;
+	background-color:#FF0000;
+	cursor:pointer;
+	z-index:2500;
+}
+#closeButton {
+	position:absolute;
+	left:909px;
+	top:24px;
+	z-index:3000;
+	cursor:pointer;
+}
+.log-in-errors {
+    display: none; 
+    background-color: #FFF793;
+    color: #666666;
+    left: 252px;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    padding: 2px 0 2px 3px;
+    position: relative;
+    width: 370px;
+}
+.modal {
+	display: none;
+}
+.overlay-bg {
+	background-color: #000;
+	height: 100%;
+	left: 0;
+	opacity: 0.7;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+}
+.overlay-modal {
+	height: 544px;
+	left: 50%;
+	margin-left: -485px;
+	margin-top: -272px;
+	position: fixed;
+	top: 50%;
+	width: 970px;
+	z-index: 10000;
+}
+.brightcove-player {
+	height: 544px;
+	width: 970px;
+	z-index: 0;
+}
+.video-hover-picture {
+	display: none;
+	position: absolute;
+	z-index: 100;
+}
+.video-mute-btn {
+	background: url(../images/btn-mute.png) no-repeat top center;
+	bottom: 15px;
+	cursor: pointer;
+	display: block;
+	height: 22px;
+	position: absolute;
+	right: 15px;
+	width: 28px;
+}
+.video-mute-btn.muted {
+	background-position: bottom center;
+}
